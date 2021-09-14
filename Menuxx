@@ -1,0 +1,146 @@
+const prefix = /
+Menu = `Nightcore  -  Rock mix  
+01:52 ━━━●───── 03:08
+     ⇆ㅤㅤ ◁ㅤ ❚❚ㅤ ▷ㅤ ㅤ↻﻿
+                  ılıılıılıılıılıılı
+⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫
+Hola *${pushname}* ${timeFt}
+
+_Tipo de usuario:_ ${tipoDeUsr}
+┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+${bodyM} XP: ${getLevelingXp(sender)}
+${bodyM} Nivel: ${getLevelingLevel(sender)}
+${bodyM} rango: ${rango}
+┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+Son las *${hora}*\nHoy es *${week1}  ${calender1}*
+===========================================
+${bodyM} _Reglas del BOT_: *${prefix}reglas*
+${bodyM} _Reglas del Grupo_: *${prefix}rules* 
+${bodyM} *Prefijo :* [ *${prefix}* ]
+${bodyM} ${prefix}nivel
+${bodyM} ${prefix}lb (ranked)
+===========================================
+_*COMANDOS ADMINS*_
+
+${bodyM} ${prefix}kick + ⌜Tag @⌟
+${bodyM} ${prefix}promote + ⌜Tag @⌟
+${bodyM} ${prefix}demote + ⌜Tag @⌟
+${bodyM} ${prefix}adminlist/listadmin
+${bodyM} ${prefix}link
+${bodyM} ${prefix}grupo abrir/cerrar
+${bodyM} ${prefix}inspeccionar + ⌜link⌟
+
+_*SWITCH COMANDOS*_
+${bodyM} ${prefix}antimedia 1/0
+${bodyM} ${prefix}antigp 1/0
+${bodyM} ${prefix}+18 1/0
+${bodyM} ${prefix}welcome 1/0
+${bodyM} ${prefix}allaud 1/0 (audios)
+${bodyM} ${prefix}autostick 1/0
+${bodyM} ${prefix}antibad 1/0 F
+
+_*TAG'S*_
+${bodyM} ${prefix}tagall + ⌜Texto⌟
+${bodyM} ${prefix}hidetag + ⌜Texto⌟
+${bodyM} ${prefix}notificar + ⌜Texto⌟
+${bodyM} ${prefix}imagetag + ⌜ImageQuoted⌟
+${bodyM} ${prefix}stickertag + ⌜Tag Sticker⌟
+${bodyM} ${prefix}totag
+${bodyM} ${prefix}waifu
+${bodyM} ${prefix}belle
+${bodyM} ${prefix}gatitas
+===========================================
+_*COMANDOS OWNER*_
+
+${bodyM} ${prefix}public
+${bodyM} ${prefix}self
+${bodyM} ${prefix}del/delete
+${bodyM} ${prefix}ban + ⌜Tag @⌟ 
+${bodyM} ${prefix}unban
+${bodyM} ${prefix}banchat 1/0
+${bodyM} ${prefix}apagar
+===========================================
+_*MUSICA Y OTROS*_
+
+${bodyM} ${prefix}play + ⌜Texto / link⌟
+${bodyM} ${prefix}letra/lirik + ⌜Texto⌟
+${bodyM} ${prefix}playvid + ⌜Texto / link⌟
+${bodyM} ${prefix}attp + ⌜Texto⌟
+${bodyM} ${prefix}tts + ⌜Code⌟ + ⌜Texto⌟
+${bodyM} ${prefix}idiomas (Code para ${prefix}tts)
+${bodyM} ${prefix}ytsearch + ⌜Texto⌟
+${bodyM} ${prefix}google + ⌜Texto⌟
+
+${bodyM} ${prefix}runtime
+${bodyM} ${prefix}wame
+${bodyM} ${prefix}doxing
+${bodyM} ${prefix}clima + ⌜Texto⌟
+${bodyM} ${prefix}calc
+${bodyM} ${prefix}zalgo + ⌜Texto⌟
+${bodyM} ${prefix}contar + ⌜Texto⌟
+===========================================
+_*LOGOS Y MENU +18*_
+
+${bodyM} ${prefix}menu6 (Comandos +18) 
+${bodyM} ${prefix}menu7 (Comandos de logos)
+===========================================
+_*JUEGOS*_
+
+${bodyM} ${prefix}jugar _Juega con el Bot:_
+${bodyM} ${prefix}ttt + ⌜Tag @⌟ _Tictactoe_
+${bodyM} ${prefix}delttc _Cerrar sesión de juego ttt_
+${bodyM} ${prefix}lucky _Casino_ 
+${bodyM} ${prefix}dado # _Dados_ 
+${bodyM} ${prefix}amgplay _Among'us_ 
+===========================================
+_*INTERACCION CON EL BOT*_
+
+${bodyM} ${prefix}audios (Audios)
+${bodyM} ${prefix}otak (Otak_audios)
+${bodyM} ${prefix}bana (Bananeraudios)
+${bodyM} ${prefix}stickers (Stickers)
+${bodyM} ${prefix}simi + ⌜Texto o pregunta⌟
+${bodyM} ${prefix}pr _Pregunta_ 
+${bodyM} ${prefix}setprof (Perfil del menú)
+===========================================
+_*FUN*_
+
+${bodyM} ${prefix}getpic + ⌜Tag @⌟
+${bodyM} ${prefix}getbio + ⌜Tag @⌟
+${bodyM} ${prefix}soyyo
+
+${bodyM} ${prefix}sticker + ⌜Tag image⌟
+${bodyM} ${prefix}robar Author | Pack  + ⌜@stick⌟
+${bodyM} ${prefix}toimg + ⌜Tag sticker⌟
+${bodyM} ${prefix}ger + ⌜Tag image⌟ 
+${bodyM} ${prefix}wasted + ⌜Tag profil⌟ 
+${bodyM} ${prefix}sgay + ⌜Tag image⌟
+${bodyM} ${prefix}srip + ⌜Tag image⌟ 
+${bodyM} ${prefix}scarcel + ⌜Tag image⌟ 
+${bodyM} ${prefix}gay + ⌜Tag @⌟
+${bodyM} ${prefix}mimitos + ⌜Tag @⌟
+${bodyM} ${prefix}smeme + ⌜T1⌟ + ⌜T2⌟ (Tag Image) 
+
+${bodyM} ${prefix}emparejar (Parejas random)
+${bodyM} ${prefix}emparejarme (Busca tu pareja)
+${bodyM} ${prefix}casar + ⌜Tag @⌟
+${bodyM} ${prefix}top5 + ⌜Texto⌟
+${bodyM} ${prefix}calumnia + ⌜@tag⌟ | Text | Reply
+===========================================
+_*IMAGENES*_
+
+${bodyM} ${prefix}imagen + ⌜Texto⌟
+${bodyM} ${prefix}wallpaper
+${bodyM} ${prefix}anime
+${bodyM} ${prefix}nezuko
+${bodyM} ${prefix}neko
+${bodyM} ${prefix}loli
+${bodyM} ${prefix}randomloli
+${bodyM} ${prefix}lolixx
+${bodyM} ${prefix}nekoxx
+${bodyM} ${prefix}imgrandom
+${bodyM} ${prefix}randomxd
+${bodyM} ${prefix}animeme
+
+⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫⩫
+⌜⸸⁶Lalelilolu⁹†⛧⌟ ⛥ `           
